@@ -1,0 +1,328 @@
+html {
+	height: 100%;
+
+}
+
+body {
+	height: 100%;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	line-height: 130%;
+}
+
+.fullwrap {
+	height: 100%;
+	width: 100%;
+	background-color: #ffffff;
+
+}
+
+.midwrap {
+	height: 100%;
+	width: 1000px;
+	background-color: #F2F2F2;
+	box-shadow: 0px 0px 20px #ccc;
+	position: relative;
+	margin: auto;
+	top: 95px;
+
+		/* IE10 Consumer Preview */ 
+	background-image: -ms-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #D6D6D6 300%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #D6D6D6 300%);
+
+	/* Opera */ 
+	background-image: -o-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #D6D6D6 300%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(radial, center center, 0, center center, 506, color-stop(0, #FFFFFF), color-stop(3, #D6D6D6));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #D6D6D6 300%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: radial-gradient(circle farthest-corner at center, #FFFFFF 0%, #D6D6D6 300%);
+}
+
+.head {
+	position: absolute;
+	top: -80px;
+	left: 180px;
+	pointer-events:none;
+}
+
+.bar {
+	position: absolute;
+	left:-12px;
+	box-shadow: 0px 0px 10px black;
+	top: -40px;
+}
+
+
+.whitebar {
+	position: absolute;
+	height: 8px;
+	width: 1050px;
+	left: -25px;
+	top: -51px;
+	background-color: white;
+	box-shadow: 0px 3px 10px white, 0px 3px 10px white, 0px 3px 20px white, 0px 3px 5px white, 0px 3px 30px white;
+}
+
+.navbar {
+	position: relative;
+	top: -25px;
+	left: 25px;
+}
+
+.navbutton {
+	display: inline;
+	position: relative;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 22px;
+	background-color: white;
+	padding: 20px 35px 0px 35px;
+	margin-right: 1px;
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+	box-shadow: 0px 0px 2px grey inset;
+	color: #555;
+
+	-webkit-transition: box-shadow 2s ease-out;
+    -o-transition: box-shadow 2s ease-out;
+    -moz-transition: box-shadow 2s ease-out;
+    transition: box-shadow 2s ease-out;
+}
+
+.small {
+	font-size: 18px;
+	padding: 20px 22px 0px 22px;
+}
+
+.navbutton:hover {
+	color: white;
+	background-color: black;
+	box-shadow: 0px 0px 10px black inset, 0px 0px 20px black inset;
+	text-shadow: 0px 0px 20px white;
+	top: 4px;
+	-webkit-transition: box-shadow .25s ease-out;
+	-moz-transition: box-shadow .25s ease-out;
+    -ms-transition: box-shadow .25s ease-out;
+   	-o-transition: box-shadow .25s ease-out;
+    transition: box-shadow .25s ease-out;
+}
+
+a {
+	text-decoration: none;
+	color: #5281AB;
+}
+
+a:hover {
+	color: #5281AB;
+	text-shadow:0px 0px 1px dodgerblue;
+}
+
+.crumb {
+	text-shadow: 0px 0px 15px #737373;
+}
+
+.navigation {
+	position: relative;
+	top: 35px;
+}
+
+.headshot {
+	margin-left: 35px;
+	margin-top: -40px;
+	position: absolute;
+	pointer-events:none;
+}
+
+.padded {
+	padding-left: 18px;
+	padding-right:0px;
+	padding-bottom: 50px;
+}
+
+.boldtext {
+	margin-top: 80px;
+	font-size: 22px;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+.normaltext {
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	line-height: 135%;
+	color: #222;
+}
+
+.indent {
+	margin-left: 245px;
+	margin-right: 30px;
+}
+
+.indent2 {
+	margin-left: 30px;
+	margin-right: -20px;
+}
+
+.bullet {
+	list-style-type:disc;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	line-height: 135%;
+}
+
+.ball {
+	margin-left: 20px;
+}
+
+.emph {
+	color: black;
+	font-size: 11pt;
+}
+
+.center {
+	margin-left: 140px;
+}
+
+.content {
+	background-color: transparent;
+}
+
+.graph {
+ 	float: left;
+ 	position: relative;
+ 	margin-bottom: 10px;
+ 	border: 1px solid #ccc;
+ 	left: -10px;
+}
+
+.rightside {
+	position: relative;
+	top: 72px;
+	clear: left;
+	left: 10px;
+	padding-left: 20px;
+	margin-right: 20px;
+}
+
+.subbar {
+	position: relative;
+	top: 80px;
+}
+
+.title {
+	padding-left: 15px;
+	font-size: 22px;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+.fourcol {
+	float: left;
+	margin: auto;
+	width: 22.5% ;
+	background-color: transparent;
+}
+
+.threecol {
+	float: left;
+	margin: auto;
+	width: 31% ;
+	background-color: transparent;
+}
+
+.onecol {
+	float: left;
+	margin: auto;
+	width: 100% ;
+	background-color: transparent;
+}
+
+.twocol {
+	float: left;
+	margin: auto;
+	width: 47%;
+	background-color: transparent;
+}
+
+b {
+	font-weight: bold;
+}
+
+.middle {
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+
+table {margin-bottom:1.4em;width:100%;}
+th {font-weight:bold;}
+thead th {background:#c3d9ff;}
+th, td, caption {padding:4px 10px 4px 5px;}
+tbody tr:nth-child(even) td, tbody tr.even td {background:#e5ecf9;}
+tfoot {font-style:italic;}
+big {
+	font-weight: bold;
+}
+
+.optional {
+	font-weight: bold;
+}
+
+em {
+	font-weight: bold;
+}
+
+.raven {
+	position: relative;
+	top: 60px;
+	left: 30px;
+}
+
+.partyplayer {
+	position: relative;
+	left: 28px;
+	top: 40px;
+}
+
+.partyplayerbutton {
+	display: inline-block;
+	border: 1px solid grey;
+	border-radius: 2px;
+	-webkit-box-shadow: 2px 2px 3px #999; 
+	box-shadow: 2px 2px 2px #bbb;
+	background-color: #ccc;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc),color-stop(0.4, #ccc));
+	padding: 2px 6px 0px 6px;
+	font-weight: bold;
+}
+
+.partytext:hover {
+	color: #00C8FF;
+	text-shadow:0px 0px 5px black, 0px 0px 10px black;
+
+	-webkit-transition: text-shadow .1s, color .1s;
+	-moz-transition: text-shadow .1s, color .1s;
+    -ms-transition: text-shadow .1s, color .1s;
+   	-o-transition: text-shadow .1s, color .1s;
+    transition: text-shadow .1s, color .1s;
+}
+
+.partytext {
+	color: black;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 19px;
+	-webkit-transition: text-shadow 1s, color 1s;
+	-moz-transition: text-shadow 1s, color 1s;
+    -ms-transition: text-shadow 1s, color 1s;
+   	-o-transition: text-shadow 1s, color 1s;
+    transition: text-shadow 1s, color 1s;
+
+    -webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+} 
+

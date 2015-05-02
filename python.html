@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<title>Hillary Sanders - Python</title>
+			<meta name="author" content="Hillary Sanders"> 
+        	<meta name="keywords" content="Hillary Sanders, Statistics and Environmental Economics, University of California, Berkeley; Research Data Analyst Intern, Acumen LLC; Research Assistant, Berkeley Roundtable on the International Economy"> 
+        	<meta name="description" content="Hillary Sanders: Statistics and Environmental Economics Senior at Univerisity of California, Berkeley"> 
+        	<meta name="robots" content="index, follow, noarchive"> 
+		<link type="text/css" rel="stylesheet" href="css/reset.css"/>
+		<link type="text/css" rel="stylesheet" href="css/mainstylesheet.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
+		<style>
+			.midwrap {
+				height: 5000px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="fullwrap">
+				<div class="midwrap">
+					<!--Header-->
+					<img class="head" src="Images/hillary1.png" width="600px" height="60px">
+					<div class="navigation">
+						<ul class="navbar">
+							<a href="Hi.html"><li class="navbutton ">Hi</li></a>
+							<a href="Code.html"><li class="navbutton">Code</li></a>
+							<a href="Graphs.html"><li class="navbutton">Graphs</li></a>
+							<a href="Cheatsheets.html"><li class="navbutton crumb">Cheatsheets</li></a>
+							<a href="Resume.html"><li class="navbutton">Resume</li></a>
+							<a href="Art.html"><li class="navbutton">Art</li></a>
+							<a href="Contact.html"><li class="navbutton">Contact</li></a>
+						</ul>
+						
+						<img class="bar" src="Images/bar.png" width="1024px" height="15px">
+						<div class="whitebar"></div>
+					</div>
+					<!--End Header-->
+
+					<!--Content-->
+					<div class="content">
+						<br />
+						<br />
+						<p class="title">Cheatsheets</p>
+						<br />
+						<p class ="normaltext padded">Various cheatsheets that are helpful to me</p>
+						<div class="navigation subbar">
+						<ul class="navbar">
+							<a href="emacs.html"><li class="navbutton  small">Emacs</li></a>
+							<a href="python.html"><li class="navbutton small crumb">Python</li></a>
+							<a href="scala.html"><li class="navbutton small">Scala</li></a>
+							<a href="latex.html"><li class="navbutton small">LaTeX</li></a>
+							<a href="stats.html"><li class="navbutton small">Statistical Tests</li></a>
+							<a href="prob.html"><li class="navbutton small">Probability Theory</li></a>
+							<a href="bay.html"><li class="navbutton small">Bayesian Analysis</li></a>
+						</ul>
+						
+						<img class="bar" src="Images/bar.png" width="1024px" height="15px">
+						<div class="whitebar">
+						</div>
+						<!--Sheet Title-->
+						<p class="title">Python</p>
+						<p class ="normaltext padded">I'm just starting to teach myself Python, so this cheatsheet is pretty brief, and mostly just an aggregation of borrowed and modified material. It will keep on growing! Also nobody sue me thanks. </p>
+						<!--Sheet Col-->
+						<div class="threecol padded">
+							<br />
+							<b> Overall </b>
+							<li> Indendation matters! </li>
+							<li> Python is case sensitive </li>
+							<li> Comments: # , or """ <i>multiline comment</i> """ </li>
+							<br>
+							<li> a=b=c=1 defines a, b, and c to be 1</li>
+							<li> a,b,c = 1, 1.0, "Hello Glorious World" </li>
+							</br>
+							<b> Data Types </b>
+
+							<li><b> Numbers: </b> </li>
+							 int(), long(), float(), and complex() </br>
+							 Numbers allow the use of math.floor(), math.ceil(), math.round(x[, n])
+
+							<li><b> Strings: </b> If lala="omg so cool", then <br>
+							 lala[0:4] is "omg". </br>
+							 lala[0:4]*2 is "omgomg". </br>
+							 lala + " PUMPKIN!" is "omg so cool PUMPKIN!" </br>
+							 <b> % </b> </br>
+							>>> print '%(lang)s has %(n)03d quote types.' % \ </br>
+							...       {"lang": "Python", "n": 2} </br>
+							Python has 002 quote types. </br>
+							</li>
+
+
+							<li><b> Lists[ ]:</b> Very versatile! Unfrozen Tuples. </br>
+							IF li = [1, 12.02, "Cheese"]</br>
+							li[0:] is [1, 12.02, "Cheese"]</br>
+							li[0:2] is [1, 12.02]</br>
+							li[1] is 12.02</br>
+							li[-1] is "Cheese"</br>
+							li.append("b") is [1, 12.03, "Cheese", "b"]</br>
+							li.insert(2, "1") is [1, 12.013, "1", "Cheese"]</br>
+							li.extend(["1","2"]) is [1, 12.03, "Cheese", "1", "2"]</br>
+							[0,9]*2 returns [0,9,0,9] </br>
+
+							 </li>
+							<li><b> Tuples( ): </b> In short, frozen lists. No .append, .extend, .insert. </br> </li>
+						</div>
+						<div class="threecol padded">
+							<li><b> Dictionaries{ }: </b> UNORDERED </br> 
+							d={'one':1, 'two':2}  <b>#or</b> </br>
+							d={} </br>
+							d['one'] = 1 ; d['two'] = 2 </br>
+							THEN </br>
+							&nbsp;&nbsp;&nbsp; d['one'] is 1 </br>
+							&nbsp;&nbsp;&nbsp; d.keys() is ['one', 'two'] </br>
+							&nbsp;&nbsp;&nbsp; d.values() is [1, 2] </br>
+							 </li>
+
+							<li> <b> Arithmatic </b> </br>
+							+, -, *, / <br>
+							% (remainder), ** (exponent), // (floor division)
+							</li>
+							</br>
+
+							<li> <b> Truth Value Testing </b> </br>
+							  Any object can be tested for truth value. Basically any empty object, None, or False is considered False:</br>
+							  - None </br>
+							  - False </br>
+							  - 0, 0.00, etc. </br>
+							  - "", [], or () </br>
+							  - {} </br>
+							  - an object with length 0 </br>
+							</br>
+							</li>
+
+							<li> <b> Logical </b> </br>
+							==, !=, <, >, <=, >- </br>
+							and, or, not </br>
+							in, not in <br>
+							is, is not (x is y, here is results in 1 if id(x) equals id(y).) </br>
+							<i> In general, 0 is FALSE, and all other numbers are TRUE </i>
+							 </br>
+							- x or y </br>
+							- x and y </br>
+							- not x </br>
+							</li>
+						</div>
+						<div class="threecol padded">
+							<li> <b> Assignment Operators </b>  </br>
+							= Simple assignment </br>
+							c += a is equivalent to c = c + a</br>
+							c -= a is equivalent to c = c - a</br>
+							c *= a is equivalent to c = c * a</br>
+							c /= a is equivalent to c = c / a</br>
+							c %= a is equivalent to c = c % a</br>
+							c **= a is equivalent to c = c ** a</br>
+							c //= a is equivalent to c = c // a</br>
+							</li>
+							  </br>
+							  <li> <b> Functions </b> </br>
+							  def FUN(parameters): </br>
+							  &nbsp;&nbsp;&nbsp;; """ comment """ </br>
+							  &nbsp;&nbsp;&nbsp;... </br>
+							  &nbsp;&nbsp;&nbsp; return[ ... ]
+							   </li>
+
+							 </br>
+
+
+
+							<li> <b> If (else) statements </b> </li>
+							if a>b: </br>
+							&nbsp;&nbsp;&nbsp; print b</br>
+							else:</br>
+							&nbsp;&nbsp;&nbsp; print a</br>
+
+							</br>
+							<li> <b> Loops </b> </br>
+							for, while  </br>
+							Control Statements: </br>
+							&nbsp;&nbsp;&nbsp; <b>break</b> (terminates the loop) </br>
+							&nbsp;&nbsp;&nbsp; <b>continue</b> (skip the remainder and continue to the next iteration) </br>
+							&nbsp;&nbsp;&nbsp; <b>pass</b> (used when a statement is required syntactically but you do not want any command or code to execute.)
+							</li>
+						</div>
+						<div class="onecol">
+							<br />
+							<p class="title middle">Built-in Functions</p>
+							<br />
+							<table border="1" class="docutils">
+							    <colgroup>
+							    <col width="21%" />
+							    <col width="19%" />
+							    <col width="20%" />
+							    <col width="19%" />
+							    <col width="22%" />
+							    </colgroup>
+							    <tbody valign="top">
+							    <tr><td><a  href="http://docs.python.org/2/library/functions.html#abs" title="abs"><tt class="xref py py-func docutils literal"><span class="pre">abs()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#divmod" title="divmod"><tt class="xref py py-func docutils literal"><span class="pre">divmod()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#input" title="input"><tt class="xref py py-func docutils literal"><span class="pre">input()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#open" title="open"><tt class="xref py py-func docutils literal"><span class="pre">open()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#staticmethod" title="staticmethod"><tt class="xref py py-func docutils literal"><span class="pre">staticmethod()</span></tt></a></td>
+							    </tr>
+							    <tr><td><a  href="http://docs.python.org/2/library/functions.html#all" title="all"><tt class="xref py py-func docutils literal"><span class="pre">all()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#enumerate" title="enumerate"><tt class="xref py py-func docutils literal"><span class="pre">enumerate()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#int" title="int"><tt class="xref py py-func docutils literal"><span class="pre">int()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#ord" title="ord"><tt class="xref py py-func docutils literal"><span class="pre">ord()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#str" title="str"><tt class="xref py py-func docutils literal"><span class="pre">str()</span></tt></a></td>
+							    </tr>
+							    <tr><td><a  href="http://docs.python.org/2/library/functions.html#any" title="any"><tt class="xref py py-func docutils literal"><span class="pre">any()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#eval" title="eval"><tt class="xref py py-func docutils literal"><span class="pre">eval()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#isinstance" title="isinstance"><tt class="xref py py-func docutils literal"><span class="pre">isinstance()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#pow" title="pow"><tt class="xref py py-func docutils literal"><span class="pre">pow()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#sum" title="sum"><tt class="xref py py-func docutils literal"><span class="pre">sum()</span></tt></a></td>
+							    </tr>
+							    <tr><td><a  href="http://docs.python.org/2/library/functions.html#basestring" title="basestring"><tt class="xref py py-func docutils literal"><span class="pre">basestring()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#execfile" title="execfile"><tt class="xref py py-func docutils literal"><span class="pre">execfile()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#issubclass" title="issubclass"><tt class="xref py py-func docutils literal"><span class="pre">issubclass()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#print" title="print"><tt class="xref py py-func docutils literal"><span class="pre">print()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#super" title="super"><tt class="xref py py-func docutils literal"><span class="pre">super()</span></tt></a></td>
+							    </tr>
+							    <tr><td><a  href="http://docs.python.org/2/library/functions.html#bin" title="bin"><tt class="xref py py-func docutils literal"><span class="pre">bin()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#file" title="file"><tt class="xref py py-func docutils literal"><span class="pre">file()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#iter" title="iter"><tt class="xref py py-func docutils literal"><span class="pre">iter()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#property" title="property"><tt class="xref py py-func docutils literal"><span class="pre">property()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#tuple" title="tuple"><tt class="xref py py-func docutils literal"><span class="pre">tuple()</span></tt></a></td>
+							    </tr>
+							    <tr><td><a  href="http://docs.python.org/2/library/functions.html#bool" title="bool"><tt class="xref py py-func docutils literal"><span class="pre">bool()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#filter" title="filter"><tt class="xref py py-func docutils literal"><span class="pre">filter()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#len" title="len"><tt class="xref py py-func docutils literal"><span class="pre">len()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#range" title="range"><tt class="xref py py-func docutils literal"><span class="pre">range()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#type" title="type"><tt class="xref py py-func docutils literal"><span class="pre">type()</span></tt></a></td>
+							    </tr>
+							    <tr><td><a  href="http://docs.python.org/2/library/functions.html#bytearray" title="bytearray"><tt class="xref py py-func docutils literal"><span class="pre">bytearray()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#float" title="float"><tt class="xref py py-func docutils literal"><span class="pre">float()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#list" title="list"><tt class="xref py py-func docutils literal"><span class="pre">list()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#raw_input" title="raw_input"><tt class="xref py py-func docutils literal"><span class="pre">raw_input()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#unichr" title="unichr"><tt class="xref py py-func docutils literal"><span class="pre">unichr()</span></tt></a></td>
+							    </tr>
+							    <tr><td><a  href="http://docs.python.org/2/library/functions.html#callable" title="callable"><tt class="xref py py-func docutils literal"><span class="pre">callable()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#format" title="format"><tt class="xref py py-func docutils literal"><span class="pre">format()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#locals" title="locals"><tt class="xref py py-func docutils literal"><span class="pre">locals()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#reduce" title="reduce"><tt class="xref py py-func docutils literal"><span class="pre">reduce()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#unicode" title="unicode"><tt class="xref py py-func docutils literal"><span class="pre">unicode()</span></tt></a></td>
+							    </tr>
+							    <tr><td><a  href="http://docs.python.org/2/library/functions.html#chr" title="chr"><tt class="xref py py-func docutils literal"><span class="pre">chr()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#func-frozenset"><tt class="docutils literal"><span class="pre">frozenset()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#long" title="long"><tt class="xref py py-func docutils literal"><span class="pre">long()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#reload" title="reload"><tt class="xref py py-func docutils literal"><span class="pre">reload()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#vars" title="vars"><tt class="xref py py-func docutils literal"><span class="pre">vars()</span></tt></a></td>
+							    </tr>
+							    <tr><td><a  href="http://docs.python.org/2/library/functions.html#classmethod" title="classmethod"><tt class="xref py py-func docutils literal"><span class="pre">classmethod()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#getattr" title="getattr"><tt class="xref py py-func docutils literal"><span class="pre">getattr()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#map" title="map"><tt class="xref py py-func docutils literal"><span class="pre">map()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#func-repr"><tt class="docutils literal"><span class="pre">repr()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#xrange" title="xrange"><tt class="xref py py-func docutils literal"><span class="pre">xrange()</span></tt></a></td>
+							    </tr>
+							    <tr><td><a  href="http://docs.python.org/2/library/functions.html#cmp" title="cmp"><tt class="xref py py-func docutils literal"><span class="pre">cmp()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#globals" title="globals"><tt class="xref py py-func docutils literal"><span class="pre">globals()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#max" title="max"><tt class="xref py py-func docutils literal"><span class="pre">max()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#reversed" title="reversed"><tt class="xref py py-func docutils literal"><span class="pre">reversed()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#zip" title="zip"><tt class="xref py py-func docutils literal"><span class="pre">zip()</span></tt></a></td>
+							    </tr>
+							    <tr><td><a  href="http://docs.python.org/2/library/functions.html#compile" title="compile"><tt class="xref py py-func docutils literal"><span class="pre">compile()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#hasattr" title="hasattr"><tt class="xref py py-func docutils literal"><span class="pre">hasattr()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#func-memoryview"><tt class="docutils literal"><span class="pre">memoryview()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#round" title="round"><tt class="xref py py-func docutils literal"><span class="pre">round()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#__import__" title="__import__"><tt class="xref py py-func docutils literal"><span class="pre">__import__()</span></tt></a></td>
+							    </tr>
+							    <tr><td><a  href="http://docs.python.org/2/library/functions.html#complex" title="complex"><tt class="xref py py-func docutils literal"><span class="pre">complex()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#hash" title="hash"><tt class="xref py py-func docutils literal"><span class="pre">hash()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#min" title="min"><tt class="xref py py-func docutils literal"><span class="pre">min()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#func-set"><tt class="docutils literal"><span class="pre">set()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#apply" title="apply"><tt class="xref py py-func docutils literal"><span class="pre">apply()</span></tt></a></td>
+							    </tr>
+							    <tr><td><a  href="http://docs.python.org/2/library/functions.html#delattr" title="delattr"><tt class="xref py py-func docutils literal"><span class="pre">delattr()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#help" title="help"><tt class="xref py py-func docutils literal"><span class="pre">help()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#next" title="next"><tt class="xref py py-func docutils literal"><span class="pre">next()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#setattr" title="setattr"><tt class="xref py py-func docutils literal"><span class="pre">setattr()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#buffer" title="buffer"><tt class="xref py py-func docutils literal"><span class="pre">buffer()</span></tt></a></td>
+							    </tr>
+							    <tr><td><a  href="http://docs.python.org/2/library/functions.html#func-dict"><tt class="docutils literal"><span class="pre">dict()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#hex" title="hex"><tt class="xref py py-func docutils literal"><span class="pre">hex()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#object" title="object"><tt class="xref py py-func docutils literal"><span class="pre">object()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#slice" title="slice"><tt class="xref py py-func docutils literal"><span class="pre">slice()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#coerce" title="coerce"><tt class="xref py py-func docutils literal"><span class="pre">coerce()</span></tt></a></td>
+							    </tr>
+							    <tr><td><a  href="http://docs.python.org/2/library/functions.html#dir" title="dir"><tt class="xref py py-func docutils literal"><span class="pre">dir()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#id" title="id"><tt class="xref py py-func docutils literal"><span class="pre">id()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#oct" title="oct"><tt class="xref py py-func docutils literal"><span class="pre">oct()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#sorted" title="sorted"><tt class="xref py py-func docutils literal"><span class="pre">sorted()</span></tt></a></td>
+							    <td><a  href="http://docs.python.org/2/library/functions.html#intern" title="intern"><tt class="xref py py-func docutils literal"><span class="pre">intern()</span></tt></a></td>
+							    </tr>
+							    </tbody>
+							</table>
+							<br />
+							<p class="title middle">Snazzy Tricks!</p>
+							<br />
+						</div>
+
+						<div class="threecol padded">
+							<li> <b> Argument Unpacking</b> </li>
+							def some_function(x, y): </br>
+							    # do some magic </br>
+							 </br>
+							tuple_foo = (3, 4) </br>
+							dict_bar = {'y': 3, 'x': 2} </br>
+							 </br>
+							some_function(*tuple_foo) </br>
+							some_function(**dict_bar) </br>
+							 </br>
+
+							<li> <b> Slice Operators </b> </li>
+							 a = [1,2,3,4,5]</br>
+							  # iterate over the whole list in 2-increments </br>
+							>>> a[::2] </br>
+							[1,3,5]</br> 
+							</br>
+							# reverse a list: </br>
+							>>> a[::-1] </br>
+							[5,4,3,2,1] </br>
+							</br>
+
+							<li> <b> Chaining Comparison Operators </b> </li>
+							>>> x = 5 </br>
+							>>> 1 < x < 10 </br>
+							True </br>
+							>>> 10 < x < 20  </br>
+							False </br>
+							>>> x < 10 < x*10 < 100 </br>
+							True </br>
+							>>> 5 == x > 4 </br>
+							True </br>
+							 </br>
+							<li> <b> Nested List comprehensions </b> </li>
+							[(i,j) for i in range(3) for j in range(i) ] </br>    
+							((i,j) for i in range(4) for j in range(i) ) </br>
+							</br>
+							 </br>
+							<li> <b> Readable, multi-line regular expressions </b> </li>
+							>>> pattern = """ </br>
+							... ^                   # beginning of string </br>
+							... M{0,4}              # thousands - 0 to 4 M's </br>
+							... (CM|CD|D?C{0,3})    # hundreds - 900 (CM), 400 (CD), 0-300 (0 to 3 C's), </br>
+							...                     #            or 500-800 (D, followed by 0 to 3 C's) </br>
+							... $                   # end of string </br>
+							... """ </br>
+							>>> re.search(pattern, 'M', re.VERBOSE) </br>
+						</div>
+
+						<div class="threecol padded">
+							<li> <b> Conditional Assignment </b> </li>
+							x = 3 if (y == 1) else 2 </br>
+							x = 3 if (y == 1) else 2 if (y == -1) else 1 </br>
+							# also valid:
+							x = (class1 if y == 1 else class2)(arg1, arg2) </br>
+							</br>
+
+
+							<li> <b> Exception else clause </b> </li>
+							try:</br>
+							&nbsp;&nbsp;&nbsp;  put_4000000000_volts_through_it(parrot)</br>
+							except Voom:</br>
+							&nbsp;&nbsp;&nbsp;  print "'E's pining!"</br>
+							else:</br>
+							&nbsp;&nbsp;&nbsp;  print "This parrot is no more!"</br>
+							finally:</br>
+							&nbsp;&nbsp;&nbsp;  end_sketch()</br>
+							</br>
+							</br>
+
+							<li> <b> Exception else clause </b> </li>
+						</div>
+
+						<div class="threecol padded">
+
+						</div>
+ 						
+ 						<TABLE border=1>
+ 							<br />
+						<br />
+							<TR> <TH> Built-in Type </TH> <TH> Definition </TH> <TH> type </TH>  </TR>
+							 <TR> <TD> True </TD> <TD> Boolean TRUE </TD> <TD> bool </TD> </TR>
+							   <TR> <TD> False </TD> <TD> Boolean FALSE </TD> <TD> bool </TD> </TR>
+							  <TR> <TD> None </TD> <TD> The absence of a value, as when default arguments are not passed to a function. </TD> <TD> NoneType </TD> </TR>
+							  <TR> <TD> NotImplemented </TD> <TD> Special value which can be returned by the 'rich comparison' special methods (__eq__(), __lt__(), and friends), to indicate that the comparison is not implemented with respect to the other type. </TD> <TD>  </TD> </TR>
+							  <TR> <TD> Ellipsis </TD> <TD> Special value used in conjunction with extended slicing syntax. </TD> <TD>  </TD> </TR>
+							  <TR> <TD> __debug__ </TD> <TD> This constant is true if Python was not started with an -O option. See also the assert statement. </TD> <TD>  </TD> </TR>
+							  <tr><TD></TD><TD></TD><TD></TD></tr>
+						</TABLE>
+
+						<p class="title middle">String Methods</p>
+						
+						<div class="twocol padded">
+							<dl class="method">
+						    <dt id="str.center">
+						    <tt class="descclassname">str.</tt><tt class="descname">center</tt><big>(</big><em>width</em><span class="optional">[</span>, <em>fillchar</em><span class="optional">]</span><big>)</big><a class="headerlink" href="#str.center" title="Permalink to this definition"></a></dt>
+						    <dd><p>Return centered in a string of length <em>width</em>. Padding is done using the
+						  specified <em>fillchar</em> (default is a space).</p>
+						   </dd></dl>
+						    
+						    <dl class="method">
+						    <dt id="str.count">
+						    <tt class="descclassname">str.</tt><tt class="descname">count</tt><big>(</big><em>sub</em><span class="optional">[</span>, <em>start</em><span class="optional">[</span>, <em>end</em><span class="optional">]</span><span class="optional">]</span><big>)</big><a class="headerlink" href="#str.count" title="Permalink to this definition"></a></dt>
+						    <dd><p>Return the number of non-overlapping occurrences of substring <em>sub</em> in the
+						  range [<em>start</em>, <em>end</em>].  Optional arguments <em>start</em> and <em>end</em> are
+						  interpreted as in slice notation.</p>
+						    </dd></dl>
+						    
+						    <dl class="method">
+						    <dt id="str.decode">
+						    <tt class="descclassname">str.</tt><tt class="descname">decode</tt><big>(</big><span class="optional">[</span><em>encoding</em><span class="optional">[</span>, <em>errors</em><span class="optional">]</span><span class="optional">]</span><big>)</big><a class="headerlink" href="#str.decode" title="Permalink to this definition"></a></dt>
+						    <dd><p>Decodes the string using the codec registered for <em>encoding</em>. <em>encoding</em>
+						    defaults to the default string encoding.  <em>errors</em> may be given to set a
+						  different error handling scheme.  The default is <tt class="docutils literal"><span class="pre">'strict'</span></tt>, meaning that
+						  encoding errors raise <a class="reference internal" href="exceptions.html#exceptions.UnicodeError" title="exceptions.UnicodeError"><tt class="xref py py-exc docutils literal"><span class="pre">UnicodeError</span></tt></a>.  Other possible values are
+						  <tt class="docutils literal"><span class="pre">'ignore'</span></tt>, <tt class="docutils literal"><span class="pre">'replace'</span></tt> and others. </p>
+						    </dd></dl>
+						    
+						    <dl class="method">
+						    <dt id="str.encode">
+						    <tt class="descclassname">str.</tt><tt class="descname">encode</tt><big>(</big><span class="optional">[</span><em>encoding</em><span class="optional">[</span>, <em>errors</em><span class="optional">]</span><span class="optional">]</span><big>)</big><a class="headerlink" href="#str.encode" title="Permalink to this definition"></a></dt>
+						    <dd><p>Return an encoded version of the string.  Default encoding is the current
+						  default string encoding.  <em>errors</em> may be given to set a different error
+						  handling scheme.  The default for <em>errors</em> is <tt class="docutils literal"><span class="pre">'strict'</span></tt>, meaning that
+						  encoding errors raise a <a class="reference internal" href="exceptions.html#exceptions.UnicodeError" title="exceptions.UnicodeError"><tt class="xref py py-exc docutils literal"><span class="pre">UnicodeError</span></tt></a>.  Other possible values are
+						  <tt class="docutils literal"><span class="pre">'ignore'</span></tt>, <tt class="docutils literal"><span class="pre">'replace'</span></tt>, and
+						  others.</p>
+
+
+						    </dd></dl>
+						    
+						    <dl class="method">
+						    <dt id="str.endswith">
+						    <tt class="descclassname">str.</tt><tt class="descname">endswith</tt><big>(</big><em>suffix</em><span class="optional">[</span>, <em>start</em><span class="optional">[</span>, <em>end</em><span class="optional">]</span><span class="optional">]</span><big>)</big><a class="headerlink" href="#str.endswith" title="Permalink to this definition"></a></dt>
+						    <dd><p>Return <tt class="xref docutils literal"><span class="pre">True</span></tt> if the string ends with the specified <em>suffix</em>, otherwise return
+						  <tt class="xref docutils literal"><span class="pre">False</span></tt>.  <em>suffix</em> can also be a tuple of suffixes to look for.  With optional
+						  <em>start</em>, test beginning at that position.  With optional <em>end</em>, stop comparing
+						  at that position.</p>
+						    </dd></dl>
+						    
+						    <dl class="method">
+						    <dt id="str.expandtabs">
+						    <tt class="descclassname">str.</tt><tt class="descname">expandtabs</tt><big>(</big><span class="optional">[</span><em>tabsize</em><span class="optional">]</span><big>)</big><a class="headerlink" href="#str.expandtabs" title="Permalink to this definition"></a></dt>
+						    <dd><p>Return a copy of the string where all tab characters are replaced by one or
+						  more spaces, depending on the current column and the given tab size.  Tab
+						  positions occur every <em>tabsize</em> characters (default is 8, giving tab
+						    positions at columns 0, 8, 16 and so on).  To expand the string, the current
+						  column is set to zero and the string is examined character by character.  If
+						  the character is a tab (<tt class="docutils literal"><span class="pre">\t</span></tt>), one or more space characters are inserted
+						  in the result until the current column is equal to the next tab position.
+						  (The tab character itself is not copied.)  If the character is a newline
+						  (<tt class="docutils literal"><span class="pre">\n</span></tt>) or return (<tt class="docutils literal"><span class="pre">\r</span></tt>), it is copied and the current column is reset to
+						  zero.  Any other character is copied unchanged and the current column is
+						  incremented by one regardless of how the character is represented when
+						  printed.</p>
+						   
+						    </dd></dl>
+						    
+						    <dl class="method">
+						    <dt id="str.find">
+						    <tt class="descclassname">str.</tt><tt class="descname">find</tt><big>(</big><em>sub</em><span class="optional">[</span>, <em>start</em><span class="optional">[</span>, <em>end</em><span class="optional">]</span><span class="optional">]</span><big>)</big><a class="headerlink" href="#str.find" title="Permalink to this definition"></a></dt>
+						    <dd><p>Return the lowest index in the string where substring <em>sub</em> is found, such
+						  that <em>sub</em> is contained in the slice <tt class="docutils literal"><span class="pre">s[start:end]</span></tt>.  Optional arguments
+						  <em>start</em> and <em>end</em> are interpreted as in slice notation.  Return <tt class="docutils literal"><span class="pre">-1</span></tt> if
+						  <em>sub</em> is not found.</p>
+						    <div class="admonition note">
+						    <p class="first admonition-title">Note</p>
+						    <p>The <a class="reference internal" href="#str.find" title="str.find"><tt class="xref py py-meth docutils literal"><span class="pre">find()</span></tt></a> method should be used only if you need to know the
+						  position of <em>sub</em>.  To check if <em>sub</em> is a substring or not, use the
+						  <a class="reference internal" href="../reference/expressions.html#in"><tt class="xref std std-keyword docutils literal"><span class="pre">in</span></tt></a> operator:</p>
+
+						    </div>
+						    </dd></dl>
+						    
+						    <dl class="method">
+						    <dt id="str.format">
+						    <tt class="descclassname">str.</tt><tt class="descname">format</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#str.format" title="Permalink to this definition"></a></dt>
+						    <dd><p>Perform a string formatting operation.  The string on which this method is
+						  called can contain literal text or replacement fields delimited by braces
+						  <tt class="docutils literal"><span class="pre">{}</span></tt>.  Each replacement field contains either the numeric index of a
+						  positional argument, or the name of a keyword argument.  Returns a copy of
+						  the string where each replacement field is replaced with the string value of
+						  the corresponding argument.</p>
+						   
+						    
+						    <p>See <a class="reference internal" href="string.html#formatstrings"><em>Format String Syntax</em></a> for a description of the various formatting options
+						  that can be specified in format strings.</p>
+						    <p>This method of string formatting is the new standard in Python 3, and
+						  should be preferred to the <tt class="docutils literal"><span class="pre">%</span></tt> formatting described in
+						  <a class="reference internal" href="#string-formatting"><em>String Formatting Operations</em></a> in new code.</p>
+
+						    </dd></dl>
+						    
+						    <dl class="method">
+						    <dt id="str.index">
+						    <tt class="descclassname">str.</tt><tt class="descname">index</tt><big>(</big><em>sub</em><span class="optional">[</span>, <em>start</em><span class="optional">[</span>, <em>end</em><span class="optional">]</span><span class="optional">]</span><big>)</big><a class="headerlink" href="#str.index" title="Permalink to this definition"></a></dt>
+						    <dd><p>Like <a class="reference internal" href="#str.find" title="str.find"><tt class="xref py py-meth docutils literal"><span class="pre">find()</span></tt></a>, but raise <a class="reference internal" href="exceptions.html#exceptions.ValueError" title="exceptions.ValueError"><tt class="xref py py-exc docutils literal"><span class="pre">ValueError</span></tt></a> when the substring is not found.</p>
+						    </dd></dl>
+						    
+						    <dl class="method">
+						    <dt id="str.isalnum">
+						    <tt class="descclassname">str.</tt><tt class="descname">isalnum</tt><big>( </big><big>)</big><a class="headerlink" href="#str.isalnum" title="Permalink to this definition"></a></dt>
+						    <dd><p>Return true if all characters in the string are alphanumeric and there is at
+						  least one character, false otherwise.</p>
+						    
+						    </dd></dl>
+						    
+						    <dl class="method">
+						    <dt id="str.isalpha">
+						    <tt class="descclassname">str.</tt><tt class="descname">isalpha</tt><big>( </big><big>)</big><a class="headerlink" href="#str.isalpha" title="Permalink to this definition"></a></dt>
+						    <dd><p>Return true if all characters in the string are alphabetic and there is at least
+						  one character, false otherwise.</p>
+						    
+						    </dd></dl>
+						    
+						    <dl class="method">
+						    <dt id="str.isdigit">
+						    <tt class="descclassname">str.</tt><tt class="descname">isdigit</tt><big>( </big><big>)</big><a class="headerlink" href="#str.isdigit" title="Permalink to this definition"></a></dt>
+						    <dd><p>Return true if all characters in the string are digits and there is at least one
+						  character, false otherwise.</p>
+						    
+						    </dd></dl>
+						    
+						    <dl class="method">
+						    <dt id="str.islower">
+						    <tt class="descclassname">str.</tt><tt class="descname">islower</tt><big>( </big><big>)</big><a class="headerlink" href="#str.islower" title="Permalink to this definition"></a></dt>
+						    <dd><p>Return true if all cased characters <a class="footnote-reference" href="#id15" id="id6">[4]</a> in the string are lowercase and there is at
+						  least one cased character, false otherwise.</p>
+						    
+						    </dd></dl>
+						    
+						    <dl class="method">
+						    <dt id="str.isspace">
+						    <tt class="descclassname">str.</tt><tt class="descname">isspace</tt><big>( </big><big>)</big><a class="headerlink" href="#str.isspace" title="Permalink to this definition"></a></dt>
+						    <dd><p>Return true if there are only whitespace characters in the string and there is
+						  at least one character, false otherwise.</p>
+						    
+						    </dd></dl>
+						    
+						    <dl class="method">
+						    <dt id="str.istitle">
+						    <tt class="descclassname">str.</tt><tt class="descname">istitle</tt><big>( </big><big>)</big><a class="headerlink" href="#str.istitle" title="Permalink to this definition"></a></dt>
+						    <dd><p>Return true if the string is a titlecased string and there is at least one
+						  character, for example uppercase characters may only follow uncased characters
+						  and lowercase characters only cased ones.  Return false otherwise.</p>
+						    
+						    </dd></dl>
+						    
+						    <dl class="method">
+						    <dt id="str.isupper">
+						    <tt class="descclassname">str.</tt><tt class="descname">isupper</tt><big>( </big><big>)</big><a class="headerlink" href="#str.isupper" title="Permalink to this definition"></a></dt>
+						    <dd><p>Return true if all cased characters <a class="footnote-reference" href="#id15" id="id7">[4]</a> in the string are uppercase and there is at
+						  least one cased character, false otherwise.</p>
+						    
+						    </dd></dl>
+						    
+						    <dl class="method">
+						    <dt id="str.join">
+						    <tt class="descclassname">str.</tt><tt class="descname">join</tt><big>(</big><em>iterable</em><big>)</big><a class="headerlink" href="#str.join" title="Permalink to this definition"></a></dt>
+						    <dd><p>Return a string which is the concatenation of the strings in the
+						  <a class="reference internal" href="../glossary.html#term-iterable"><em class="xref std std-term">iterable</em></a> <em>iterable</em>.  The separator between elements is the string
+						  providing this method.</p>
+						    </dd></dl>
+						    
+						    <dl class="method">
+						    <dt id="str.ljust">
+						    <tt class="descclassname">str.</tt><tt class="descname">ljust</tt><big>(</big><em>width</em><span class="optional">[</span>, <em>fillchar</em><span class="optional">]</span><big>)</big><a class="headerlink" href="#str.ljust" title="Permalink to this definition"></a></dt>
+						    <dd><p>Return the string left justified in a string of length <em>width</em>. Padding is done
+						  using the specified <em>fillchar</em> (default is a space).  The original string is
+						  returned if <em>width</em> is less than or equal to <tt class="docutils literal"><span class="pre">len(s)</span></tt>.</p>
+						    </dd></dl>
+						    
+
+
+						    <dl class="method">
+						    <dt id="str.lower">
+						    <tt class="descclassname">str.</tt><tt class="descname">lower</tt><big>( </big><big>)</big><a class="headerlink" href="#str.lower" title="Permalink to this definition"></a></dt>
+						    <dd><p>Return a copy of the string with all the cased characters <a class="footnote-reference" href="#id15" id="id8">[4]</a> converted to
+						  lowercase.</p>
+						    
+						    </dd></dl>
+						</div>
+
+
+						<div class="twocol padded">
+							<dl class="method">
+							  <dt id="str.lstrip">
+							  <tt class="descclassname">str.</tt><tt class="descname">lstrip</tt><big>(</big><span class="optional">[</span><em>chars</em><span class="optional">]</span><big>)</big><a class="headerlink" href="#str.lstrip" title="Permalink to this definition"></a></dt>
+							  <dd><p>Return a copy of the string with leading characters removed.  The <em>chars</em>
+							  argument is a string specifying the set of characters to be removed.  If omitted
+							or <tt class="xref docutils literal"><span class="pre">None</span></tt>, the <em>chars</em> argument defaults to removing whitespace.  The <em>chars</em>
+							  argument is not a prefix; rather, all combinations of its values are stripped:</p>
+
+
+							</dd></dl>
+							  
+							  <dl class="method">
+							  <dt id="str.partition">
+							  <tt class="descclassname">str.</tt><tt class="descname">partition</tt><big>(</big><em>sep</em><big>)</big><a class="headerlink" href="#str.partition" title="Permalink to this definition"></a></dt>
+							  <dd><p>Split the string at the first occurrence of <em>sep</em>, and return a 3-tuple
+							containing the part before the separator, the separator itself, and the part
+							after the separator.  If the separator is not found, return a 3-tuple containing
+							the string itself, followed by two empty strings.</p>
+							  </dd></dl>
+
+
+
+							  
+							  <dl class="method">
+							  <dt id="str.replace">
+							  <tt class="descclassname">str.</tt><tt class="descname">replace</tt><big>(</big><em>old</em>, <em>new</em><span class="optional">[</span>, <em>count</em><span class="optional">]</span><big>)</big><a class="headerlink" href="#str.replace" title="Permalink to this definition"></a></dt>
+							  <dd><p>Return a copy of the string with all occurrences of substring <em>old</em> replaced by
+							<em>new</em>.  If the optional argument <em>count</em> is given, only the first <em>count</em>
+							  occurrences are replaced.</p>
+							  </dd></dl>
+							  
+							  <dl class="method">
+							  <dt id="str.rfind">
+							  <tt class="descclassname">str.</tt><tt class="descname">rfind</tt><big>(</big><em>sub</em><span class="optional">[</span>, <em>start</em><span class="optional">[</span>, <em>end</em><span class="optional">]</span><span class="optional">]</span><big>)</big><a class="headerlink" href="#str.rfind" title="Permalink to this definition"></a></dt>
+							  <dd><p>Return the highest index in the string where substring <em>sub</em> is found, such
+							that <em>sub</em> is contained within <tt class="docutils literal"><span class="pre">s[start:end]</span></tt>.  Optional arguments <em>start</em>
+							  and <em>end</em> are interpreted as in slice notation.  Return <tt class="docutils literal"><span class="pre">-1</span></tt> on failure.</p>
+							  </dd></dl>
+							  
+							  <dl class="method">
+							  <dt id="str.rindex">
+							  <tt class="descclassname">str.</tt><tt class="descname">rindex</tt><big>(</big><em>sub</em><span class="optional">[</span>, <em>start</em><span class="optional">[</span>, <em>end</em><span class="optional">]</span><span class="optional">]</span><big>)</big><a class="headerlink" href="#str.rindex" title="Permalink to this definition"></a></dt>
+							  <dd><p>Like <a class="reference internal" href="#str.rfind" title="str.rfind"><tt class="xref py py-meth docutils literal"><span class="pre">rfind()</span></tt></a> but raises <a class="reference internal" href="exceptions.html#exceptions.ValueError" title="exceptions.ValueError"><tt class="xref py py-exc docutils literal"><span class="pre">ValueError</span></tt></a> when the substring <em>sub</em> is not
+							found.</p>
+							  </dd></dl>
+							  
+							  <dl class="method">
+							  <dt id="str.rjust">
+							  <tt class="descclassname">str.</tt><tt class="descname">rjust</tt><big>(</big><em>width</em><span class="optional">[</span>, <em>fillchar</em><span class="optional">]</span><big>)</big><a class="headerlink" href="#str.rjust" title="Permalink to this definition"></a></dt>
+							  <dd><p>Return the string right justified in a string of length <em>width</em>. Padding is done
+							using the specified <em>fillchar</em> (default is a space). The original string is
+							returned if <em>width</em> is less than or equal to <tt class="docutils literal"><span class="pre">len(s)</span></tt>.</p>
+							  </dd></dl>
+							  
+							  <dl class="method">
+							  <dt id="str.rpartition">
+							  <tt class="descclassname">str.</tt><tt class="descname">rpartition</tt><big>(</big><em>sep</em><big>)</big><a class="headerlink" href="#str.rpartition" title="Permalink to this definition"></a></dt>
+							  <dd><p>Split the string at the last occurrence of <em>sep</em>, and return a 3-tuple
+							containing the part before the separator, the separator itself, and the part
+							after the separator.  If the separator is not found, return a 3-tuple containing
+							two empty strings, followed by the string itself.</p>
+							  </dd></dl>
+							  
+							  <dl class="method">
+							  <dt id="str.rsplit">
+							  <tt class="descclassname">str.</tt><tt class="descname">rsplit</tt><big>(</big><span class="optional">[</span><em>sep</em><span class="optional">[</span>, <em>maxsplit</em><span class="optional">]</span><span class="optional">]</span><big>)</big><a class="headerlink" href="#str.rsplit" title="Permalink to this definition"></a></dt>
+							  <dd><p>Return a list of the words in the string, using <em>sep</em> as the delimiter string.
+							If <em>maxsplit</em> is given, at most <em>maxsplit</em> splits are done, the <em>rightmost</em>
+							  ones.  If <em>sep</em> is not specified or <tt class="xref docutils literal"><span class="pre">None</span></tt>, any whitespace string is a
+							separator.  Except for splitting from the right, <a class="reference internal" href="#str.rsplit" title="str.rsplit"><tt class="xref py py-meth docutils literal"><span class="pre">rsplit()</span></tt></a> behaves like
+							<a class="reference internal" href="#str.split" title="str.split"><tt class="xref py py-meth docutils literal"><span class="pre">split()</span></tt></a> which is described in detail below.</p>
+
+							  </dd></dl>
+							  
+							  <dl class="method">
+							  <dt id="str.rstrip">
+							  <tt class="descclassname">str.</tt><tt class="descname">rstrip</tt><big>(</big><span class="optional">[</span><em>chars</em><span class="optional">]</span><big>)</big><a class="headerlink" href="#str.rstrip" title="Permalink to this definition"></a></dt>
+							  <dd><p>Return a copy of the string with trailing characters removed.  The <em>chars</em>
+							  argument is a string specifying the set of characters to be removed.  If omitted
+							or <tt class="xref docutils literal"><span class="pre">None</span></tt>, the <em>chars</em> argument defaults to removing whitespace.  The <em>chars</em>
+							  argument is not a suffix; rather, all combinations of its values are stripped:</p>
+
+							  
+							 </dd></dl>
+							  
+							  <dl class="method">
+							  <dt id="str.split">
+							  <tt class="descclassname">str.</tt><tt class="descname">split</tt><big>(</big><span class="optional">[</span><em>sep</em><span class="optional">[</span>, <em>maxsplit</em><span class="optional">]</span><span class="optional">]</span><big>)</big><a class="headerlink" href="#str.split" title="Permalink to this definition"></a></dt>
+							  <dd><p>Return a list of the words in the string, using <em>sep</em> as the delimiter
+							string.  If <em>maxsplit</em> is given, at most <em>maxsplit</em> splits are done (thus,
+							  the list will have at most <tt class="docutils literal"><span class="pre">maxsplit+1</span></tt> elements).  If <em>maxsplit</em> is not
+							specified or <tt class="docutils literal"><span class="pre">-1</span></tt>, then there is no limit on the number of splits
+							(all possible splits are made).</p>
+							  <p>If <em>sep</em> is given, consecutive delimiters are not grouped together and are
+							deemed to delimit empty strings (for example, <tt class="docutils literal"><span class="pre">'1,,2'.split(',')</span></tt> returns
+							 <tt class="docutils literal"><span class="pre">['1',</span> <span class="pre">'',</span> <span class="pre">'2']</span></tt>).  The <em>sep</em> argument may consist of multiple characters
+							(for example, <tt class="docutils literal"><span class="pre">'1&lt;&gt;2&lt;&gt;3'.split('&lt;&gt;')</span></tt> returns <tt class="docutils literal"><span class="pre">['1',</span> <span class="pre">'2',</span> <span class="pre">'3']</span></tt>).
+							Splitting an empty string with a specified separator returns <tt class="docutils literal"><span class="pre">['']</span></tt>.</p>
+							  <p>If <em>sep</em> is not specified or is <tt class="xref docutils literal"><span class="pre">None</span></tt>, a different splitting algorithm is
+							applied: runs of consecutive whitespace are regarded as a single separator,
+							and the result will contain no empty strings at the start or end if the
+							string has leading or trailing whitespace.  Consequently, splitting an empty
+							string or a string consisting of just whitespace with a <tt class="xref docutils literal"><span class="pre">None</span></tt> separator
+							returns <tt class="docutils literal"><span class="pre">[]</span></tt>.</p>
+							  <p>For example, <tt class="docutils literal"><span class="pre">'</span> <span class="pre">1</span>&nbsp; <span class="pre">2</span>&nbsp;&nbsp; <span class="pre">3</span>&nbsp; <span class="pre">'.split()</span></tt> returns <tt class="docutils literal"><span class="pre">['1',</span> <span class="pre">'2',</span> <span class="pre">'3']</span></tt>, and
+							<tt class="docutils literal"><span class="pre">'</span>&nbsp; <span class="pre">1</span>&nbsp; <span class="pre">2</span>&nbsp;&nbsp; <span class="pre">3</span>&nbsp; <span class="pre">'.split(None,</span> <span class="pre">1)</span></tt> returns <tt class="docutils literal"><span class="pre">['1',</span> <span class="pre">'2</span>&nbsp;&nbsp; <span class="pre">3</span>&nbsp; <span class="pre">']</span></tt>.</p>
+							  </dd></dl>
+							  
+							  <span class="target" id="index-24"></span><dl class="method">
+							  <dt id="str.splitlines">
+							  <tt class="descclassname">str.</tt><tt class="descname">splitlines</tt><big>(</big><span class="optional">[</span><em>keepends</em><span class="optional">]</span><big>)</big><a class="headerlink" href="#str.splitlines" title="Permalink to this definition"></a></dt>
+							  <dd><p>Return a list of the lines in the string, breaking at line boundaries.
+							This method uses the <a class="reference internal" href="../glossary.html#term-universal-newlines"><em class="xref std std-term">universal newlines</em></a> approach to splitting lines.
+							Line breaks are not included in the resulting list unless <em>keepends</em> is
+							given and true.</p>
+							  <p>For example, <tt class="docutils literal"><span class="pre">'ab</span> <span class="pre">c\n\nde</span> <span class="pre">fg\rkl\r\n'.splitlines()</span></tt> returns
+							<tt class="docutils literal"><span class="pre">['ab</span> <span class="pre">c',</span> <span class="pre">'',</span> <span class="pre">'de</span> <span class="pre">fg',</span> <span class="pre">'kl']</span></tt>, while the same call with <tt class="docutils literal"><span class="pre">splitlines(True)</span></tt>
+							  returns <tt class="docutils literal"><span class="pre">['ab</span> <span class="pre">c\n',</span> <span class="pre">'\n',</span> <span class="pre">'de</span> <span class="pre">fg\r',</span> <span class="pre">'kl\r\n']</span></tt>.</p>
+							  <p>Unlike <a class="reference internal" href="#str.split" title="str.split"><tt class="xref py py-meth docutils literal"><span class="pre">split()</span></tt></a> when a delimiter string <em>sep</em> is given, this
+							method returns an empty list for the empty string, and a terminal line
+							break does not result in an extra line.</p>
+							  </dd></dl>
+							  
+							  <dl class="method">
+							  <dt id="str.startswith">
+							  <tt class="descclassname">str.</tt><tt class="descname">startswith</tt><big>(</big><em>prefix</em><span class="optional">[</span>, <em>start</em><span class="optional">[</span>, <em>end</em><span class="optional">]</span><span class="optional">]</span><big>)</big><a class="headerlink" href="#str.startswith" title="Permalink to this definition"></a></dt>
+							  <dd><p>Return <tt class="xref docutils literal"><span class="pre">True</span></tt> if string starts with the <em>prefix</em>, otherwise return <tt class="xref docutils literal"><span class="pre">False</span></tt>.
+							<em>prefix</em> can also be a tuple of prefixes to look for.  With optional <em>start</em>,
+							test string beginning at that position.  With optional <em>end</em>, stop comparing
+							string at that position.</p>
+							  
+							  </dd></dl>
+							  
+							  <dl class="method">
+							  <dt id="str.strip">
+							  <tt class="descclassname">str.</tt><tt class="descname">strip</tt><big>(</big><span class="optional">[</span><em>chars</em><span class="optional">]</span><big>)</big><a class="headerlink" href="#str.strip" title="Permalink to this definition"></a></dt>
+							  <dd><p>Return a copy of the string with the leading and trailing characters removed.
+							The <em>chars</em> argument is a string specifying the set of characters to be removed.
+							If omitted or <tt class="xref docutils literal"><span class="pre">None</span></tt>, the <em>chars</em> argument defaults to removing whitespace.
+							The <em>chars</em> argument is not a prefix or suffix; rather, all combinations of its
+							values are stripped:</p>
+
+							  </dd></dl>
+							  
+							  <dl class="method">
+							  <dt id="str.swapcase">
+							  <tt class="descclassname">str.</tt><tt class="descname">swapcase</tt><big>( </big><big>)</big><a class="headerlink" href="#str.swapcase" title="Permalink to this definition"></a></dt>
+							  <dd><p>Return a copy of the string with uppercase characters converted to lowercase and
+							vice versa.</p>
+							  
+							  </dd></dl>
+							  
+							  <dl class="method">
+							  <dt id="str.title">
+							  <tt class="descclassname">str.</tt><tt class="descname">title</tt><big>( </big><big>)</big><a class="headerlink" href="#str.title" title="Permalink to this definition"></a></dt>
+							  <dd><p>Return a titlecased version of the string where words start with an uppercase
+							character and the remaining characters are lowercase.</p>
+							  <p>The algorithm uses a simple language-independent definition of a word as
+							groups of consecutive letters.  The definition works in many contexts but
+							it means that apostrophes in contractions and possessives form word
+							boundaries, which may not be the desired result:</p>
+						</div>
+
+						<!--End Col-->
+					</div>
+					<!--End Content-->
+				</div>
+		</div>
+	</body>
+
+</html>

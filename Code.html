@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<title>Hillary Sanders - Code</title>
+			<meta name="author" content="Hillary Sanders"> 
+        	<meta name="keywords" content="Hillary Sanders, Statistics and Environmental Economics, University of California, Berkeley; Research Data Analyst Intern, Acumen LLC; Research Assistant, Berkeley Roundtable on the International Economy"> 
+        	<meta name="description" content="Hillary Sanders: Statistics and Environmental Economics Senior at Univerisity of California, Berkeley"> 
+        	<meta name="robots" content="index, follow, noarchive"> 
+		<link type="text/css" rel="stylesheet" href="css/reset.css"/>
+		<link type="text/css" rel="stylesheet" href="css/mainstylesheet.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
+		<style>
+			.midwrap {
+				height: 1500px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="fullwrap">
+				<div class="midwrap" >
+					<!--Header-->
+					<img class="head" src="Images/hillary1.png" width="600px" height="60px">
+					<div class="navigation">
+						<ul class="navbar">
+							<a href="Hi.html"><li class="navbutton">Hi</li></a>
+							<a href="Code.html"><li class="navbutton crumb">Code</li></a>
+							<a href="Graphs.html"><li class="navbutton">Graphs</li></a>
+							<a href="Cheatsheets.html"><li class="navbutton">Cheatsheets</li></a>
+							<a href="Resume.html"><li class="navbutton">Resume</li></a>
+							<a href="Art.html"><li class="navbutton">Art</li></a>
+							<a href="Contact.html"><li class="navbutton">Contact</li></a>
+						</ul>
+						
+						<img class="bar" src="Images/bar.png" width="1024px" height="15px">
+						<div class="whitebar"></div>
+					</div>
+					<!--End Header-->
+
+					<!--Content-->
+					<div class="content">
+						<p class="boldtext indent2">Code</p>
+						<br />
+							<p class="normaltext indent2">
+								Below, you'll find a brief description of the various projects I've worked on, and a synopsis of either the outcome or the current state of the project.
+							</p>
+						<div class="threecol padded">
+							<p class="normaltext">
+							<br />
+							<br />
+							<span class="emph">THE BEST COOLEST STUFF!!!</span>
+							<br />
+							<br />
+							Nope, it's confidential, sorry.
+							<br />
+							<br />
+							<span class="center">***</span>
+							<br />
+							<br />
+							<span class="emph">Homegrown Random Forests</span>
+							<br />
+							<br />
+							This was part of a really fun machine learning project I worked on with two other students from Berkeley, both of whom are among the smartest people I met at Berkeley. Basically we tried to predict baseball players' success by the players' past stats. We implemented a plethora of different machine learning methods; I wrote a random forest learner from scratch. Why? Because. It was pretty fun. Code can be found here and here .
+							<br />
+							<br />
+							<span class="center">***</span>
+							<br />
+							<br />
+							<span class="emph">Creating an R Package: Legistative Text Mapping and Directed Acyclic Graphs</span>
+							<br />
+							<br />
+							From 2011 to 2012 I worked with the fantastic Mark Huberty, a graduate student in Political Science at the Travers Department at UC Berkeley (who is awesome and basically is the reason I got interested in doing what I'm now happily doing with my life. Props.) I helped develop an original R package to map the evolution of legislation from its introduction as a bill, through the amendment process, until finalization. There are five core pieces of functionality in the Leghist package:
+							<br />
+							<br />
+							1. Mapping of amendments to their locations in legislative bills. <br />
+							2. Identification of discarded material. <br />
+							3. Mapping of sections between editions of bills.<br />
+							4. Modeling of the content of added and discarded material.<br />
+							5. Visualization of the flow of bill content, by subject matter.<br />
+							<br />
+							Although I was somewhat involved in all parts of the above, I wrote the code for 5). There were two master functions that I created for the package. Both took raw output from 1:4), and created customizable, yet automated, directed ayclic graphs, implemented through the R package igraph. I also wrote automated scripts to test these functions' functionality.
+							<br />
+							<br />
+							I also worked on figuring out how to document (by implementing Roxygen2), test, and finally create the R package in an automated fashion.
+							</p>
+						</div>
+
+						<div class="threecol padded">
+							<p class="normaltext">
+							<br />
+							<br />
+							<span class="emph">Using Tweets and Bayesian Statistical Analysis to Model the 2012 Presidential Election</span>
+							<br />
+							<br />
+							This was one of those class projects that was just way too much fun. I wrote a paper describing this project, which this text links to. Basically, I created a forecasting model which predicts state-level vote-share probabilities by using a hierarchical Bayesian model to incorporate the simple text analysis of state-specific tweets into predictions. The model used Markov chain Monte Carlo methods to develop the final posterior distribution. Model priors were based off of state-level 2004 and 2008 vote-share data. Data consisted of recent tweets mentioning 'Obama' or 'Romney'. Although the simple text analysis of tweets is not a perfect substitute for polling data (problems will be discussed below), it offers a potential way to bolster political forecasting models.
+							<br />
+							<br />
+							<span class="center">***</span>
+							<br />
+							<br />
+							<span class="emph">Voting with your Tweet: Forecasting elections with social media data; Broadcasting live predictions online</span>
+							<br />
+							<br />
+							This project broadcasted live, out-of-sample congressional elections predictions based on Mark Huberty's SuperLearner-based algorithm which takes tweets as input. I helped Mark (who is awesome and taught me nearly everything) by cleaning up code, writing a bit myself, and gathering congressional candidate data.
+							<br />
+							<br />
+							<span class="center">***</span>
+							<br />
+							<br />
+							<span class="emph">Automated Pulling, XML Parsing, and Visualization of World Bank Country-wise Economic Indicators.</span>
+							<br />
+							<br />
+							This was actually for a school project. I worked with a good group of kids, and we all took our own chunks of the intended project and just sort of ran with it. My goal was to completely automate, and make easily adjustable, the automated pulling of World Bank data, and do the same for some really awesome looking, and informative (!) graphs. I would show you the pretty pictures, but I left my laptop out in the rain, soooo...
+							</p>
+						</div>
+
+						<div class="threecol padded">
+							<p class="normaltext">
+							<br />
+							<br />
+							<span class="emph">Automated Visualizations of Medicare Data</span>
+							<br />
+							<br />
+							This is part of what I worked on for the my summer (2012) internship with Acumen LLC. I wrote various flexible and adjustable R functions which take as input excel workbooks, which each function parses, organizes, and plots in some unique way.
+							<br />
+							<br />
+							One function I wrote plots normalized values of multiple variables over all districts or all states in the United States with a segmented scatter plot. A user-chosen state is highlighted and its values shown. All points above a user-chosen number of standard deviations from the mean become two-letter state abreviations, or three-letter district abreviation. A wrapper function I made enables users to save all 51 (state) or 90 (district) graphs into a single file in an automated fashion, in various forms (jpeg, pdf). The graphs are highly customizable - they can take a flexible number of table rows and columns, and colors, line thicknes, labels, scatter segmentation, etc. is adjustable.
+							<br />
+							<br />
+							Another function I made allows viewers to spot the professional relationships among (often many thousands of) doctors. First, I created a base distance metric to represent professional closeness among two doctors Di and Dj. This involved variables like the number of beneficiaries Di and Dj share, weighted by billing, the percentage of benificiaries Di and Dj share with regards to their own unique beneficiary service count, weighted by billing, etc.
+							<br />
+							<br />
+							This function implements the R igraph package. It takes as input information regarding many thousands of doctors and plots their relationships, using a user-chosen algorithm. Users are able to modify the way the doctor relationship metrics (input to the relationship strength algorithms) are calculated. Users can also choose up to two percentile relationship cutoffs to modify how doctor nodes and realtionships are colored and sized (e.g. all realtionsips with percentile rating above 99.9% can be enlarged and colored red).
+							</p>
+					</div>
+					<!--End Content-->
+				</div>
+		</div>
+	</body>
+
+</html>

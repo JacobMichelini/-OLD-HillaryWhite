@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<title>Hillary Sanders - LaTeX</title>
+			<meta name="author" content="Hillary Sanders"> 
+        	<meta name="keywords" content="Hillary Sanders, Statistics and Environmental Economics, University of California, Berkeley; Research Data Analyst Intern, Acumen LLC; Research Assistant, Berkeley Roundtable on the International Economy"> 
+        	<meta name="description" content="Hillary Sanders: Statistics and Environmental Economics Senior at Univerisity of California, Berkeley"> 
+        	<meta name="robots" content="index, follow, noarchive"> 
+		<link type="text/css" rel="stylesheet" href="css/reset.css"/>
+		<link type="text/css" rel="stylesheet" href="css/mainstylesheet.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
+		<style>
+			.midwrap {
+				height: 1400px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="fullwrap">
+				<div class="midwrap">
+					<!--Header-->
+					<img class="head" src="Images/hillary1.png" width="600px" height="60px">
+					<div class="navigation">
+						<ul class="navbar">
+							<a href="Hi.html"><li class="navbutton ">Hi</li></a>
+							<a href="Code.html"><li class="navbutton">Code</li></a>
+							<a href="Graphs.html"><li class="navbutton">Graphs</li></a>
+							<a href="Cheatsheets.html"><li class="navbutton crumb">Cheatsheets</li></a>
+							<a href="Resume.html"><li class="navbutton">Resume</li></a>
+							<a href="Art.html"><li class="navbutton">Art</li></a>
+							<a href="Contact.html"><li class="navbutton">Contact</li></a>
+						</ul>
+						
+						<img class="bar" src="Images/bar.png" width="1024px" height="15px">
+						<div class="whitebar"></div>
+					</div>
+					<!--End Header-->
+
+					<!--Content-->
+					<div class="content">
+						<br />
+						<br />
+						<p class="title">Cheatsheets</p>
+						<br />
+						<p class ="normaltext padded">Various cheatsheets that are helpful to me</p>
+						<div class="navigation subbar">
+						<ul class="navbar">
+							<a href="emacs.html"><li class="navbutton small">Emacs</li></a>
+							<a href="python.html"><li class="navbutton small">Python</li></a>
+							<a href="scala.html"><li class="navbutton small">Scala</li></a>
+							<a href="latex.html"><li class="navbutton small crumb">LaTeX</li></a>
+							<a href="stats.html"><li class="navbutton small">Statistical Tests</li></a>
+							<a href="prob.html"><li class="navbutton small">Probability Theory</li></a>
+							<a href="bay.html"><li class="navbutton small">Bayesian Analysis</li></a>
+						</ul>
+						
+						<img class="bar" src="Images/bar.png" width="1024px" height="15px">
+						<div class="whitebar">
+						</div>
+						<!--Sheets Content-->
+						<p class="title">LaTeX</p>
+						<p class="title"><br />
+						<br /></p>
+						<div class="threecol padded">
+							<p> There are two types of text inside <i>LaTeX</i>: math text, and normal text. </br>
+							<b> $ ... $ = math text </br>
+							$$ ... $$ = math text on a centered, new line </br>
+							/ = Needed in front of any math symbol. </br> </b>
+							Comments are prefaced with a "<b>%</b>" sign.</br>
+							To create your actual <i>LaTeX</i> document, run </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;latex name-of-file.tex
+							from the terminal.</br>
+							</br>
+							<b>Document Classes</b> </br>
+							 <i>LaTeX</i> files begin with a command: \documentclass. </br> For instance, you may have: 
+							<center>\documentclass[11pt]{article}</center> </br>
+							<li><b> article:</b> for articles, the most commonly used class </li>
+							<li><b> report:</b> variant of article for a report</li>
+							<li><b> letter:</b> for letters</li>
+							<li><b> book:</b> for chapters of a book</li>
+							<li><b> proc:</b> for proceedings, based on article</li>
+							<li><b> slides:</b> to produce transparencies</li>
+							</br>
+							</p>
+							          
+							<p>
+							<b> Packages </b> </br>
+							You may also import packages into <i>LaTeX</i>, generally for extra symbols. For instance, you may have: </br>
+							<center>\documentclass[11pt]{article} </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\usepackage{amstex, amssymb, amscd}  </center> <br>
+							<b> Common Packages </b>
+							<li><b> amsmath, amsthm:</b> These packages have a lot of standard math symbols. </li>
+							<li><b> amssymb:</b> Additional fonts and symbols. </li>
+							<li><b> amscd:</b> This is a package for typesetting simple commutative diagrams. It's lightweight and easy to use, but it cannot handle diagonal arrows; if you need diagonal arrows, use the xy package described below. </li>
+							<li><b>xy</b>: This package that loads the "xy-pic" program, a general drawing package for TeX that is great for drawing directed graphs and complex commutative diagrams. Very powerful.</li>
+							<li><b> graphicx:</b> The graphicx package allows you to include graphics created by other applications. The graphics files must be in eps (encapsulated postscript) format. </li>
+							<li><b> microtype </b> The microtype package improves the spacing between words and letters. Load this package after any font packages you load, as the package behavior is dependent on this font. Basically, it just makes stuff a tad bit prettier. </li>
+							<li><b>geometry</b> Allows you to alter the margins of your page. </li>
+							 </p>	
+						</div>
+
+						<div class="threecol padded">
+							<b>  The main way of controlling the format of your document is by using matched pairs of \begin{ } and \end{ } commands. You may declare such an environment in one of the following ways:</b> </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\begin{itshape} </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The polynomial $p(t)$ splits... </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\end{itshape} </br>
+							or simply: </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{\itshape The polynomial $p(t)$ splits ...} </br>
+
+							</br>
+							</br>
+							<i> State a proposition or theorom </i> </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\begin{prop} </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is the text of my awesome proposition </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\end{prop} </br>
+							</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\newtheorem{thm}{Theorem} </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\begin{thm}[Main Theorem] </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is the main theorem. </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\end{thm} </br>
+							</br>
+
+							<i> List things (1., 2., 3. ...) </i> </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\begin{enumerate} </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\item  $M$ is complete </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\item  $f$ is proper </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\end{enumerate} </br>
+							</br>
+							<i> Center (or underline) Text </i> </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp\begin{center}</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspThis will be centered!</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp\end{center}</br>
+							(or <i> underline </i>)</br>
+							</br>
+
+							<i> Spacing </i></br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp\vskip100pt</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp\newpage</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp\newline</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp\linebreak</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp\\ = new paragraph</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp\\* = new line, but not a new paragraph</br>
+							</br>
+							<i> Tables </i> </br>
+							The 8 c's tell <i>LaTeX</i> that the table should have 8 columns, and the entries in each column are to be centered (using l or r makes them left or right justified). The vertical bar characters, |, tell <i>LaTeX</i> to draw vertical lines between the first and second columns, and after the eighth. 
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\begin{center}</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\begin{tabular}{c|ccccccc|}</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $\lambda$& (5)& (4,1)& (3)& (3,1)& (2)& (1)& (1,1)\\</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\hline </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $d_{_\lambda}$& 1& 4& 5& 6& 5& 4& 1\\ </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\end{tabular}</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\end{center}</br>
+							</br>
+						</div>
+
+						<div class="threecol padded">
+							<i> Sections </i> </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\section{Introductory Remarks} </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\subsection{ }</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\subsubsection{ }</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\chapter{ } (only in report and book document styles</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\label{ }</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\ref{ }</br>
+							<i> e.g.: </i> </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\subsection{Garden Flowers}</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   \label{Tulips}</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... as we saw in Section \ref{Tulips}, tulips are damned pretty ... </br>
+							</br>
+							<i> Bibliographies </i> </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\begin{thebibliography}{[AHU]} </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\bibitem[AHU]{ahu} Aho, A.,\ Hopcroft, J.,\ and </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ullman, J.\ (1976).  {\em{The Design and</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Analysis of Computer Algorithms.}} Addison</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wesley, Reading, Mass.</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\bibitem[AT]{AT} Auslander, L. and Tolmieri, R. </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1979). Is Computing with the Fast Fourier</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transform Pure or Applied Mathematics?</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{\em{Bulletin (New Series) of the AMS Vol. 1}} </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;847-897.</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\end{thebibliography}</br>
+							</br>
+
+							<i> Equations </i>
+							Using the equation environment puts you in math mode, so you don't need to use $ sigs, and creates a numbered, centered equation. </br>
+							</br>
+							<i> Subcripting and Superscripting </i> </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;subscript: $\alpha_j$	</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;superscript: $\alpha^j$	 </br>	
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;both: $\alpha_j^i$ </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extra-low subscript: $\alpha_{_j}$ (applies lowering operator, "_", twice) </br>
+							</br>
+							<i> Text Inside Math </i> </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$$ \{\psi \mid \psi \text{ is an additive character}\} $$.
+							In math mode, <i>LaTeX</i> ignores all spaces. So, it's good to use the following to tell <i>LaTeX</i> to space text-based symbols as text. </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$$  X := \operatorname{Spec}A $$
+							</br>
+							</br>
+
+
+							<b> Example </b> </br>
+							\documentclass[11pt]{article} </br>
+							\usepackage{amstex} </br>
+							</br>
+							\begin{document} </br>
+							</br>
+							La la la math is so cool.... </br>
+							\textbf{bold!} </br>
+							\textit{talicised!} </br>
+							\texttt{typewriter-text} </br>
+							\size{ <i> where size = tiny, scriptsize, footnotesize, small, normalsize, large, Large, or LARGE, huge, HUGE </i> }
+							</br>
+							(Rest of the paper)</br>
+							</br>
+							\end{document} </br>
+
+						</div>
+
+					
+					</div>
+					<!--End Content-->
+				</div>
+		</div>
+	</body>
+
+</html>
